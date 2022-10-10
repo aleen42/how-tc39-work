@@ -11,6 +11,87 @@
 
     <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
     <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
+    <script type="text/javascript">
+        (function () {
+            function hex2rgb(hex) {
+                return Array(3).fill('').map((_, i) => parseInt(hex.slice(2 * i, 2 * (i + 1)), 16));
+            }
+
+            function rgb2hsl(r, g, b) {
+                r /= 255;
+                g /= 255;
+                b /= 255;
+                const max = Math.max(r, g, b);
+                const min = Math.min(r, g, b);
+                let h = 0;
+                let s;
+                let l = (max + min) / 2;
+                if (max === min) {
+                    h = s = 0;
+                } else {
+                    const d = max - min;
+                    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+                    switch (max) {
+                    case r:
+                        h = (g - b) / d + (g < b ? 6 : 0);
+                        break;
+                    case g:
+                        h = (b - r) / d + 2;
+                        break;
+                    case b:
+                        h = (r - g) / d + 4;
+                    }
+                    h /= 6;
+                }
+                h = h * 360;
+                s = s * 100;
+                l = l * 100;
+                return [h, s, l];
+            }
+
+            var color = '#6842c2';
+            var rgb = hex2rgb(color.slice(1)), r = rgb[0], g = rgb[1], b = rgb[2], hsl = rgb2hsl(r, g, b),
+                h = hsl[0], s = hsl[1], l = hsl[2];
+
+            var style = document.createElement('style')
+            style.textContent = '.markdown-body code {'
+                                + '    --label-r: ' + r + ';'
+                                + '    --label-g: ' + g + ';'
+                                + '    --label-b: ' + b + ';'
+                                + '    --label-h: ' + h + ';'
+                                + '    --label-s: ' + s + ';'
+                                + '    --label-l: ' + l + ';'
+                                + '    --perceived-lightness: calc((var(--label-r)*0.2126 + var(--label-g)*0.7152 + var(--label-b)*0.0722)/255);'
+                                + '    border: 1px solid transparent;'
+                                + '    vertical-align: text-bottom;'
+                                + '    --lightness-switch: 1; /* fallback */'
+                                + '    /*--lightness-switch: max(0,min(calc((var(--perceived-lightness) - var(--lightness-threshold))*-1000),1));*/'
+                                + '    vertical-align: middle;'
+                                + '    display: inline-block;'
+                                + '    padding: 0px 4px;'
+                                + '    border-radius: 4px;'
+                                + '}'
+                                + ':root .markdown-body code, [data-color-mode=dark][data-dark-theme*=light] .markdown-body code, [data-color-mode=light][data-light-theme*=light] .markdown-body code {'
+                                + '    --lightness-threshold: 0.453;'
+                                + '    --border-threshold: 0.96;'
+                                + '    background: rgb(var(--label-r),var(--label-g),var(--label-b));'
+                                + '    color: hsl(0,0%,calc(var(--lightness-switch)*100%));'
+                                + '    border-color: hsla(var(--label-h),calc(var(--label-s)*1%),calc((var(--label-l) - 25)*1%),var(--border-alpha));'
+                                + '    --border-alpha: 0; /* fallback */'
+                                + '    /*--border-alpha: max(0,min(calc((var(--perceived-lightness) - var(--border-threshold))*100),1));*/'
+                                + '}'
+                                + '[data-color-mode=dark][data-dark-theme*=dark] .markdown-body code, [data-color-mode=light][data-light-theme*=dark] .markdown-body code {'
+                                + '    --lightness-threshold: 0.6;'
+                                + '    --background-alpha: 0.18;'
+                                + '    --border-alpha: 0.3;'
+                                + '    --lighten-by: calc((var(--lightness-threshold) - var(--perceived-lightness))*100*var(--lightness-switch));'
+                                + '    background: rgba(var(--label-r),var(--label-g),var(--label-b),var(--background-alpha));'
+                                + '    color: hsl(var(--label-h),calc(var(--label-s)*1%),calc((var(--label-l) + var(--lighten-by))*1%));'
+                                + '    border-color: hsla(var(--label-h),calc(var(--label-s)*1%),calc((var(--label-l) + var(--lighten-by))*1%),var(--border-alpha));'
+                                + '}'
+            document.head.appendChild(style);
+        })();
+    </script>
 </head>
 <body>
 <div class="container-lg px-3 my-5 markdown-body">
