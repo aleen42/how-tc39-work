@@ -1,4 +1,4 @@
-# How to write a good explainer
+# How to write a good explainer [Back](tc39.md)
 
 Each TC39 proposal should have a README.md file which explains the purpose of the proposal and its shape at a high level. [This guide](https://github.com/w3ctag/w3ctag.github.io/blob/master/explainers.md) by the W3C TAG has a good introduction for web specifications
 
@@ -64,7 +64,7 @@ Our approach is pretty similar to the Emacs Lisp approach, and it's clear from a
 
 ### Polyfill/transpiler implementations
 
-*A JavaScript implementation of the proposal, ideally packaged in a way that enables easy, realistic experimentation. See [implement.md](https://github.com/tc39/how-we-work/blob/master/implement.md) for details on creating useful prototype implementations.*
+*A JavaScript implementation of the proposal, ideally packaged in a way that enables easy, realistic experimentation. See [implement.md](implement.md) for details on creating useful prototype implementations.*
 
 You can try out an implementation of this proposal in the npm package [frobnicate](https://www.npmjs.com/package/frobnicate). Note, this package has semver major version 0 and is subject to change.
 

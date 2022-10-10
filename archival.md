@@ -1,4 +1,4 @@
-# Archival of TC39 materials
+# Archival of TC39 materials [Back](tc39.md)
 
 It's important to preserve good records of TC39's decision-making process and reasons for technical decisions made. These records are useful when considering revisiting a decision, when making decisions in related areas, for historical purposes, and more. This page summarizes what's involved at a high level to make that happen.
 
@@ -12,7 +12,7 @@ After the meeting, there is a week-long period where meeting delegates can edit 
 
 ### How to get involved
 
-[Help take notes](https://github.com/tc39/how-we-work/blob/master/how-to-take-notes.md) at TC39 committee meetings.
+[Help take notes](how-to-take-notes.md) at TC39 committee meetings.
 
 ## Proposals repository
 

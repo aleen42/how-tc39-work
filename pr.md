@@ -1,4 +1,4 @@
-# How to make a Pull Request against the ECMAScript specification
+# How to make a Pull Request against the ECMAScript specification [Back](tc39.md)
 
 All changes to the JavaScript specification ultimately become a pull request (PR) against the [ecma262](https://github.com/tc39/ecma262/) or [ecma402](https://github.com/tc39/ecma402/) repositories.
 
@@ -17,7 +17,7 @@ Commits in pull requests should have a first line which starts with a tag, follo
 
 ## Stage 4 proposal PRs (`Normative:`)
 
-Stage 4 of the [TC39 Stage Process](http://tc39.es/process-document/) requires a proposal to be written up as a PR against the specification; a review of this PR from the [editor group](https://github.com/tc39/how-we-work/blob/master/management.md#ecma-262-editor-group) is required to reach Stage 4, and after Stage 4, the PR is merged.
+Stage 4 of the [TC39 Stage Process](http://tc39.es/process-document/) requires a proposal to be written up as a PR against the specification; a review of this PR from the [editor group](management.md#ecma-262-editor-group) is required to reach Stage 4, and after Stage 4, the PR is merged.
 
 ## Non-normative PRs
 
@@ -29,7 +29,7 @@ If you have a change that you'd like to make to the JavaScript specification, ei
 
 Normative PRs change what JavaScript programs do, potentially requiring action to adjust from both JavaScript engine implementers as well as developers who program in JavaScript. This is serious business! For this reason, Normative PRs have the following requirements:
 - There must be tests proposed in [test262](https://github.com/tc39/test262/) for the PR.
-- The PR must be brought up in committee. In some cases, this can be a quick description by editors or the author, and if no concerns are raised, the proposal is considered to "have consensus". Other times, if the proposal is controversial, it's useful to [prepare a presentation](https://github.com/tc39/how-we-work/blob/master/presenting.md) explaining the motivation in more detail, with a discussion following it to discuss whether the committee can come to consensus on the proposal. For this reason, controversial normative PRs are tagged "needs consensus".
+- The PR must be brought up in committee. In some cases, this can be a quick description by editors or the author, and if no concerns are raised, the proposal is considered to "have consensus". Other times, if the proposal is controversial, it's useful to [prepare a presentation](presenting.md) explaining the motivation in more detail, with a discussion following it to discuss whether the committee can come to consensus on the proposal. For this reason, controversial normative PRs are tagged "needs consensus".
 
 If you have a PR that you've proposed, and you'd like to push it forward, write test262 tests for it and put it on the agenda for an upcoming TC39 meeting. If you're not on the committee, it's important to find a TC39 delegate to champion the proposal and help push it through the committee's process, including giving the presentation.
 

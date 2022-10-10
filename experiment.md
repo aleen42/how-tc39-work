@@ -1,4 +1,4 @@
-# How to experiment with a proposal before Stage 4
+# How to experiment with a proposal before Stage 4 [Back](tc39.md)
 
 For JavaScript programmers who want to be adventurous and give TC39 feedback on proposals, there are various ways they can try things out:
 
@@ -9,7 +9,7 @@ For JavaScript programmers who want to be adventurous and give TC39 feedback on 
     - In V8, turn the feature on by passing in a flag beginning with `--harmony` found in [flag-definitions.h](https://github.com/v8/v8/blob/master/src/flag-definitions.h). Note that some flagged implementations may be unstable or incomplete and should not generally be used in production.
         - In Node.js based on V8, the flag can be passed directly as such
         - Within Chrome, enable "experimental JavaScript features" in about:flags, or use the command-line argument `--js-flags=--harmony-<flagname>`.
-- If implementations are missing, [add one](https://github.com/tc39/how-we-work/blob/master/implement.md)!
+- If implementations are missing, [add one](implement.md)!
 - When you have feedback on the proposal, file it as an issue in the GitHub repository of the proposal
 
 WARNING: Proposals at Stage 3 and below are subject to significant change or removal.

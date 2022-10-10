@@ -1,4 +1,4 @@
-# How to take notes
+# How to take notes [Back](tc39.md)
 
 ### Introduction
 

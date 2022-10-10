@@ -1,4 +1,4 @@
-# How to give helpful feedback
+# How to give helpful feedback [Back](tc39.md)
 
 Online and in person at TC39 meetings, we're always giving feedback on proposals. There are some suggestions for making sure that your feedback is actionable and helpful.
 
@@ -20,6 +20,6 @@ Online and in person at TC39 meetings, we're always giving feedback on proposals
 - Search for existing issues which cover a topic before posting a new topic.
 - It's helpful to give positive feedback, or feedback agreeing with a previous critique, as well as new points of critique.
 - Feedback which is given in channels outside of GitHub and meeting discussions (for example, Twitter threads) is more likely to be lost.
-- When in meetings, use the queue tool rather than interrupting the presentation to make a point. See [how-to-participate-in-meetings.md](https://github.com/tc39/how-we-work/blob/master/how-to-participate-in-meetings.md) for details.
+- When in meetings, use the queue tool rather than interrupting the presentation to make a point. See [how-to-participate-in-meetings.md](how-to-participate-in-meetings.md) for details.
 
 The champion group is responsible for carefully considering the sum of all feedback and making a recommendation to the committee taking this into account. Champions will not always be able to find absolute consensus among everyone who voices an opinion, but they should do their best to listen carefully and come to a balanced judgement.

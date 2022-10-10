@@ -1,4 +1,4 @@
-# How to host a TC39 meeting
+# How to host a TC39 meeting [Back](tc39.md)
 
 TC39 hosts six in-person meetings a year. If you want to host a meeting, here's what is required:
 
@@ -15,7 +15,7 @@ TC39 hosts six in-person meetings a year. If you want to host a meeting, here's 
 
 ### Meeting Layout
 1. A single-layered circle or square is ideal. Lecture-style seating is discouraged.
-1. Power must be available at all seats. 
+1. Power must be available at all seats.
 1. There must be an area for attendees to step away for phone calls or meetings.
 
 ### Meeting Food

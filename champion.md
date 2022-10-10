@@ -1,7 +1,7 @@
 
-*This article is written for TC39 delegates (see [joining TC39](https://github.com/tc39/how-we-work/blob/master/join-tc39.md)). If you're not a delegate, you can help proposal champions out with some of these tasks as well, but some of the work involves being physically present at TC39 meetings, delivering presentations, and building consensus in committee.*
+*This article is written for TC39 delegates `代理人` (see [joining TC39](join-tc39.md)). If you're not a delegate, you can help proposal champions out with some of these tasks as well, but some of the work involves being physically present at TC39 meetings, delivering presentations, and building consensus in committee.*
 
-# Championing a proposal at TC39
+# Championing `拥护` a proposal at TC39 [Back](tc39.md)
 
 So, you want to propose a new feature for JavaScript? That proposal needs a TC39 delegate as a champion to move it through the [stage process](https://tc39.es/process-document/). This document describes how to do that.
 
@@ -11,11 +11,11 @@ Championing a proposal is an exercise is of parallel work in developing a propos
 
 Most of the work supporting a proposal can be done outside of TC39, without blocking on the committee's approval. Moving this work ahead can build more evidence for advancing stages in TC39. Some components of this work are:
 
-- **[Explainer](https://github.com/tc39/how-we-work/blob/master/explainer.md)**: A well-written README in your proposal repository which explains the purpose and shape of the proposal at a high level.
-- **[Documentation](https://github.com/tc39/how-we-work/issues/49)**: Explanations written for JavaScript developers to use the proposal.
-- **[Implementations](https://github.com/tc39/how-we-work/blob/master/implement.md)**: Allow programmers to experiment with the proposal, whether it's in transpilers/polyfills or behind a flag/in a branch of a native implementation.
-- **[Tests](https://github.com/tc39/how-we-work/issues/6)**: Tests that check the correctness of implementations--these can initially be checked in alongside implementations, but useful to eventually migrate to test262.
-- **Collecting feedback**: Learn what people think about the proposal by talking with them about it, seeing what they think of experimenting programming with it, etc. It can be helpful to get feedback from JS developers, implementers, academics, educators, community leaders, and more, from inside and outside of the committee.
+- **[Explainer `解说`](explainer.md)**: A well-written README in your proposal repository which explains the purpose and shape of the proposal at a high level.
+- **[Documentation `文档编写`](https://github.com/tc39/how-we-work/issues/49)**: Explanations written for JavaScript developers to use the proposal.
+- **[Implementations `代码实现`](implement.md)**: Allow programmers to experiment with the proposal, whether it's in transpilers/polyfills or behind a flag/in a branch of a native implementation.
+- **[Tests `测试用例`](https://github.com/tc39/how-we-work/issues/6)**: Tests that check the correctness of implementations--these can initially be checked in alongside implementations, but useful to eventually migrate to test262.
+- **Collecting feedback `收集反馈`**: Learn what people think about the proposal by talking with them about it, seeing what they think of experimenting programming with it, etc. It can be helpful to get feedback from JS developers, implementers, academics, educators, community leaders, and more, from inside and outside of the committee.
 
 ### Managing a GitHub repository
 
@@ -25,7 +25,27 @@ Each staged proposal should have a GitHub repository, included in the tc39 organ
 
 To work through the stage process, a tracking issue in the GitHub repository can be useful. Below is a template you can use for such a tracking issue:
 
+## Stage 1
+
+- [ ] introduced to TC39
+- [ ] champion(s) identified
+- [ ] initial explainer
+
+## Stage 2
+
+- [ ] committee approval
+- [ ] spec text written
+- [ ] spec reviewers selected
+
+## Stage 3
+
+- [ ] committee approval
+- [ ] spec editor signoff
+- [ ] spec reviewer signoff
+- [ ] received developer/implementor feedback
+
 ## Stage 4
+
 - [ ] committee approval
 - [ ] implement in two browsers
 - [ ] significant in-the-field experience
@@ -33,25 +53,12 @@ To work through the stage process, a tracking issue in the GitHub repository can
 - [ ] write test262 tests
 - [ ] prepare ecma262 PR
 - [ ] editor-approved ecma262 PR
-## Stage 3
-- [ ] committee approval
-- [ ] spec editor signoff
-- [ ] spec reviewer signoff
-- [ ] received developer/implementor feedback
-## Stage 2
-- [ ] committee approval
-- [ ] spec text written
-- [ ] spec reviewers selected
-## Stage 1
-- [ ] introduced to TC39
-- [ ] champion(s) identified
-- [ ] initial explainer
 
 ## Moving through the stages in committee
 
 Building on the [authoritative documentation for the stage process](https://tc39.es/process-document/), this section builds on that with some additional practical advice for activities which may be helpful at various stages.
 
-Stage advancement happens in TC39 meetings, when a proposal is presented to the committee, based on consensus of the committee that the proposal should advance to the stage. See [presentation advice](https://github.com/tc39/how-we-work/blob/master/presenting.md) for more details.
+Stage advancement happens in TC39 meetings, when a proposal is presented to the committee, based on consensus of the committee that the proposal should advance to the stage. See [presentation advice](presenting.md) for more details.
 
 ### Stage 1
 
@@ -68,8 +75,8 @@ Acceptance signifies:
 
 Leading up to Stage 1,
 - **Identify a champion (or champion group) in committee**. Unfortunately, TC39 doesn't have a comprehensive way for non-committee members to find committee mentors/champions for their proposals, but existing forums include [TC39 discourse forum](https://es.discourse.group) and [es-discuss mailing list](https://esdiscuss.org); another is the Matrix channel #tc39-general ([instructions](matrix-guide.md)). Many TC39 delegates can be found on Twitter as well.
-- **Write an explainer**. See [explainer.md](https://github.com/tc39/how-we-work/blob/master/explainer.md) for advice on how to write the introductory document to fulfill the rest of the Stage 1 requirements.
-- **Prepare a presentation** to get the committee thinking about what they want to do in this design area, and if you have specific ideas, make the case for moving in that direction. See [presenting.md](https://github.com/tc39/how-we-work/blob/master/presenting.md) for advice about presentations.
+- **Write an explainer**. See [explainer.md](explainer.md) for advice on how to write the introductory document to fulfill the rest of the Stage 1 requirements.
+- **Prepare a presentation** to get the committee thinking about what they want to do in this design area, and if you have specific ideas, make the case for moving in that direction. See [presenting.md](presenting.md) for advice about presentations.
 
 Stage 1 represents more that the committee is thinking into this design space, rather than any sort of consensus on moving JavaScript in a particular direction.
 
